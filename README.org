@@ -1,0 +1,61 @@
+* chunk-edit.el - Edit code chunks from multiple files in one buffer
+
+** Overview
+
+*chunk-edit* is an Emacs package that lets you edit code chunks from various sources
+within a single buffer. It provides syntax highlighting and the ability to save changes
+back to the original files or buffers.
+
+[[file:chunk-edit-cast.gif]]
+
+** Features
+
+- Edit code chunks from multiple files or regions in one buffer.
+- Syntax highlighting using each chunk's major mode.
+- Save and revert changes to the original sources.
+- Navigate between chunks easily with keybindings.
+
+** Installation
+
+Place =chunk-edit.el= in your Emacs =load-path=, and add the following to your
+configuration:
+
+#+begin_src emacs-lisp
+(require 'chunk-edit)
+#+end_src
+
+** Usage
+
+The package maintains a buffer (the Chunk-Edit buffer, ~*chunk-edit*~ by default) that
+collects chunks the users intends to edit. ~chunk-edit~ switches to the buffer, while
+~chunk-edit-insert-*~ commands insert buffer regions or files as chunks into the buffer.
+
+Within the Chunk-Edit buffer chunks can be edited, saved back (=C-c s=) to sources,
+reverted (=C-c r=), etc. Global commands:
+
+Create or switch to the Chunk-Edit buffer: ~M-x chunk-edit~.
+
+Insert file as Chunk into the Chunk-Edit buffer: ~M-x chunk-edit-insert-file~
+
+Insert current region as Chunk into the Chunk-Edit buffer: ~M-x chunk-edit-insert-region~
+
+** Keybindings
+
+*** Chunk manipulation in the Chunk-Edit buffer
+
+- =C-c s= : Save chunk at point.
+- =C-c C-s= : Save all modified chunks.
+- =C-c r= : Revert chunk at point.
+- =C-c C-r= : Revert all chunks.
+- =C-c k= : Kill chunk at point.
+- =C-c o= : Open source of chunk at point.
+- =C-c q= : Quit chunk-edit buffer.
+
+*** Chunk navigation within the Chunk-Edit buffer
+
+- =C-c n= : Next chunk.
+- =C-c p= : Previous chunk.
+
+** License
+
+Released under the GNU General Public License v3.0 or later.

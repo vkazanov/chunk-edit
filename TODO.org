@@ -1,0 +1,120 @@
+
+ - [X] open buffer in a chunk-edit mode
+
+ - [X] insert chunk
+
+ - [X] load file chunk
+
+ - [X] save chunk back to file based on overlay info at point
+
+ - [X] mark/unmark chunks as edited
+
+ - [X] close chunk
+
+ - [X] pages
+
+ - [X] highlighting chunks based on a mode (how does org-mode do it?)
+
+   see org-src-font-lock-fontify-block for inspiration
+
+   - [X] manual highlighting function run once
+
+   - [X] autorefresh (add to font-lock?)
+
+ - [X] make chunk loader into a protocol, like a set of functions (defstruct, or a plist)
+
+   - [X] a protocol
+
+   - [X] a simple file-backed backend
+
+   - [X] protocol to include delimeter info
+
+   - [X] a currently open buffer
+
+ - [X] source modification timestamp and it's check
+
+ - [X] switch to marker for monitoring sources of chunks and reverting?
+
+ - [X] chunk properties should not include contents
+
+ - [X] fix sync for file backends
+
+ - [X] test suite
+
+   - [X] file backend
+
+   - [X] region backend
+
+ - [X] make sure kill is run for all chunks when kill the chunk-edit buffer
+
+ - [X] mode keybindings
+
+   - [X] save (C-s s)
+
+   - [X] chunk from file (C-c i f)
+
+   - [X] revert chunk (C-c r)
+
+   - [X] go to chunk source (C-c o)
+
+   - [X] kill chunk (C-c k)
+
+   - [X] kill all and close chunk-edit (C-c C-q)
+
+   - [X] save all (C-c C-s)
+
+   - [X] revert all (C-c C-c)
+
+ - [X] license
+
+ - [X] README.org
+
+ - [ ] editing first symbol does not mark the chunk as modified
+
+ - [ ] unsynced and not modified? Revert immediately
+
+ - [X] global keybindings
+
+   - [X] insert file / insert buffer / insert region should all be global functions
+
+     no need to be in the file, just assume there's one (or create one if necessary)
+
+ - [-] chunk-edit UI
+
+   - [X] next/prev chunk
+
+   - [ ] read-only outside of chunks
+
+   - [ ] chunk manipulation
+
+   - [ ] better chunk delimiting
+
+ - [ ] eask lint at all
+
+Further ideas:
+
+ - [ ] better delimeters and meta info display
+
+ - [ ] visible global MOD UNSYNC modifiers
+
+ - [ ] additional backends
+
+   - [ ] database
+
+   - [ ] full buffer
+
+ - [ ] polymode-like syntax/navigation handling through indirect buffers?
+
+ - [ ] make chunk sources or chunks read only (by default?)
+
+ - [ ] narrow to chunk
+
+ - [ ] edit in a separate buffre
+
+ - [ ] A chunk of text without a source
+
+ - [ ] Serializing chunks
+
+ - [ ] external chunks in other modes or org-mode (like src blocks but saveable)
+
+ - [ ] check with tramp?
