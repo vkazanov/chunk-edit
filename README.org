@@ -56,6 +56,14 @@ Insert current region as Chunk into the Chunk-Edit buffer: ~M-x chunk-edit-inser
 - =C-c n= : Next chunk.
 - =C-c p= : Previous chunk.
 
+** Related
+
+- https://github.com/alphapapa/transclusion-in-emacs
+- https://github.com/phillord/lentic
+- https://github.com/Fanael/edit-indirect/blob/master/edit-indirect.el
+- https://www.emacswiki.org/emacs/narrow-indirect.el
+- https://github.com/bzg/org-mode/blob/9183e3c723b812360d1042196416d521db590e9f/lisp/org-src.el#L663
+
 ** License
 
 Released under the GNU General Public License v3.0 or later.
