@@ -85,6 +85,8 @@
 
    - [ ] read-only outside of chunks
 
+   - [ ] rework the UI closer something like (multi)occur, wgrep, etc
+
    - [ ] chunk manipulation
 
    - [ ] better chunk delimiting
@@ -94,6 +96,8 @@
 Further ideas:
 
  - [ ] better delimeters and meta info display
+
+ - [ ] chunk expansion within the chunk-edit buffer
 
  - [ ] visible global MOD UNSYNC modifiers
 
@@ -118,3 +122,6 @@ Further ideas:
  - [ ] external chunks in other modes or org-mode (like src blocks but saveable)
 
  - [ ] check with tramp?
+
+ - [ ] make it possible to include buffers within buffers in Emacs? Feasible but would
+   take a lot of time
