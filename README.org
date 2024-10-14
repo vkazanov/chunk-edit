@@ -63,6 +63,7 @@ Insert current region as Chunk into the Chunk-Edit buffer: ~M-x chunk-edit-inser
 - https://github.com/Fanael/edit-indirect/blob/master/edit-indirect.el
 - https://www.emacswiki.org/emacs/narrow-indirect.el
 - https://github.com/bzg/org-mode/blob/9183e3c723b812360d1042196416d521db590e9f/lisp/org-src.el#L663
+- https://github.com/minad/consult (consult-grep/consult-rg) + https://github.com/oantolin/embark (embark-export) + https://github.com/mhayashi1120/Emacs-wgrep
 
 ** License
 
